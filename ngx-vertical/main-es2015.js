@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wp\">\n  <div style=\"height: 100vh;border-right: 1px solid #cccccc;width: 240px;\">\n    <ngx-vertical-sortable-menu\n    (closeEmit)=\"closeEmit($event)\"\n    (clickEmit)=\"clickEmit($event)\"\n    (menuSort)=\"menuSort($event)\"\n    [menuList]=\"menus\"\n    liHeight=\"40\"></ngx-vertical-sortable-menu>\n  </div>\n  <div class=\"right\" >\n    <p>Hi~ This is demo</p>\n    <div class=\"btn\">\n      <button (click)=\"pushHandler()\">+ Push</button>\n      <button (click)=\"shiftHandler()\">- Shift</button>\n    </div>\n    <div class=\"content-1\">\n      <div class=\"title\">Click Event</div>\n      <div class=\"con\"><b>Clicked: </b>{{clickEv}}</div>\n    </div>\n    <div class=\"content-2\">\n      <div class=\"title\">Menu Data</div>\n      <div class=\"pre-wp\">\n        <pre>{{groups}}</pre>\n      </div>\n    </div>\n  </div>\n</div>\n<router-outlet></router-outlet>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"wp\">\n  <div style=\"height: 100vh;border-right: 1px solid #cccccc;width: 240px;\">\n    <ngx-vertical-sortable-menu\n    (closeEmit)=\"closeEmit($event)\"\n    (clickEmit)=\"clickEmit($event)\"\n    (menuSort)=\"menuSort($event)\"\n    [menuList]=\"menus\"\n    liHeight=\"40\"></ngx-vertical-sortable-menu>\n  </div>\n  <div class=\"right\" >\n    <p>Hi~ This is demo</p>\n    <div class=\"btn\">\n      <button (click)=\"pushHandler()\">+ Push</button>\n      <button (click)=\"shiftHandler()\">- Shift</button>\n    </div>\n    <div class=\"content-1\">\n      <div class=\"title\">Click Event</div>\n      <div class=\"con\"><b>Clicked: </b>{{clickEv}}</div>\n    </div>\n    <div class=\"content-2\">\n      <div class=\"title\">Menu Data</div>\n      <div class=\"pre-wp\">\n        <pre>{{groups}}</pre>\n      </div>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -462,36 +462,6 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app-routing.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/app-routing.module.ts ***!
-  \***************************************/
-/*! exports provided: AppRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "../node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "../node_modules/@angular/router/fesm2015/router.js");
-
-
-
-const routes = [];
-let AppRoutingModule = class AppRoutingModule {
-};
-AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
-        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-    })
-], AppRoutingModule);
-
-
-
-/***/ }),
-
 /***/ "./src/app/app.component.scss":
 /*!************************************!*\
   !*** ./src/app/app.component.scss ***!
@@ -626,10 +596,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "../node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "../node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _src_app_ngx_vertical_sortable_menu_ngx_vertical_sortable_menu_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../src/app/ngx-vertical-sortable-menu/ngx-vertical-sortable-menu.module */ "../src/app/ngx-vertical-sortable-menu/ngx-vertical-sortable-menu.module.ts");
-
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _src_app_ngx_vertical_sortable_menu_ngx_vertical_sortable_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../src/app/ngx-vertical-sortable-menu/ngx-vertical-sortable-menu.module */ "../src/app/ngx-vertical-sortable-menu/ngx-vertical-sortable-menu.module.ts");
 
 
 
@@ -641,15 +609,14 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
-            _src_app_ngx_vertical_sortable_menu_ngx_vertical_sortable_menu_module__WEBPACK_IMPORTED_MODULE_5__["NgxVerticalSortableMenuModule"]
+            _src_app_ngx_vertical_sortable_menu_ngx_vertical_sortable_menu_module__WEBPACK_IMPORTED_MODULE_4__["NgxVerticalSortableMenuModule"]
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
     })
 ], AppModule);
 
